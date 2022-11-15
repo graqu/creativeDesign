@@ -1,0 +1,385 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+main {
+  color: black;
+}
+main p {
+  margin-inline: 20px;
+}
+
+html {
+  scroll-padding: 62px;
+}
+
+h2 {
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navbar-body a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s;
+}
+.navbar-body a:hover {
+  color: dodgerblue;
+}
+.navbar-body .navbar-nav .nav-link.active {
+  color: dodgerblue;
+}
+.navbar-body .navbar-nav .nav-link {
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+.navbar-body .navbar-brand .logo-mark {
+  color: dodgerblue;
+  text-transform: uppercase;
+}
+.navbar-body .navbar-brand:hover {
+  color: dodgerblue;
+}
+.navbar-body .navbar-toggler .burger-icon {
+  padding: 5px;
+  font-size: 30px;
+  color: #fff;
+}
+.navbar-body .navbar-toggler .burger-hover {
+  color: dodgerblue;
+}
+
+.hero-picture {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/wolf-g74c8e8098_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.hero-picture .hero-bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(9, 42, 74, 0.65);
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-picture .header-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-picture .header-content .hero-text {
+  font-size: 15px;
+  margin-inline: 10px;
+}
+.hero-picture .header-content .hero-text i {
+  font-size: 100px;
+  color: dodgerblue;
+}
+.hero-picture .header-content .hero-text h1 {
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.hero-picture .header-content .hero-text .header-logo-mark {
+  text-transform: uppercase;
+  color: dodgerblue;
+}
+.hero-picture .arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+.hero-picture .arrow a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 1;
+  -webkit-animation: arrow 4s infinite;
+          animation: arrow 4s infinite;
+}
+
+.about-us {
+  position: relative;
+}
+.about-us h3 {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.about-us .about-us-icon {
+  font-size: 42px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+.about-us .aboutus-details {
+  font-size: 14px;
+}
+
+.products {
+  position: relative;
+}
+.products .products-group {
+  position: relative;
+  margin-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.products .products-group .product-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-size: cover;
+  z-index: 0;
+}
+.products .products-group .product-card h3 {
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 5px black;
+  transition: transform 0.3s;
+}
+.products .products-group .product-card .hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.products .products-group .product-card:hover h3 {
+  transform: scale(1.2);
+}
+.products .products-group .p-card-first {
+  background-image: url(../img/children-gfb106ff16_640.jpg);
+}
+.products .products-group .p-card-second {
+  background-image: url(../img/keyboard-g428828573_640.jpg);
+}
+.products .products-group .p-card-third {
+  background-image: url(../img/woman-gf61623628_640.jpg);
+}
+.products .products-group .p-card-fourth {
+  background-image: url(../img/laptop-gbac212f4d_640.jpg);
+}
+
+.portfolio .portfolio-cards {
+  margin: 0 20px;
+  color: #fff;
+}
+.portfolio .portfolio-cards h5 {
+  text-transform: uppercase;
+}
+.portfolio .portfolio-cards .card {
+  transition: transform 0.3s;
+}
+.portfolio .portfolio-cards .card:hover {
+  transform: scale(0.92);
+}
+
+.team {
+  position: relative;
+}
+.team .team-group {
+  margin: 0 10px;
+}
+.team .team-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+.team .team-card .card-image {
+  position: absolute;
+  width: 150px;
+  height: 80%;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 15px 0 0 0;
+}
+.team .team-card .member-one {
+  background-image: url(../img/team/mężczyzna1.jpg);
+}
+.team .team-card .member-two {
+  background-image: url(../img/team/kobieta1.jpg);
+}
+.team .team-card .member-three {
+  background-image: url(../img/team/kobieta2.jpg);
+}
+.team .team-card .member-four {
+  background-image: url(../img/team/mężczyzna\ 3.jpg);
+}
+.team .team-card .member-five {
+  background-image: url(../img/team/mężczyzna2.jpg);
+}
+.team .team-card .member-six {
+  background-image: url(../img/team/mężczyzna4.jpg);
+}
+.team .team-card .member-seven {
+  background-image: url(../img/team/kobieta3.jpg);
+}
+.team .team-card .member-eight {
+  background-image: url(../img/team/mruczek.jpg);
+}
+.team .team-card .team-shadow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(7, 0, 50, 0.7);
+  transition: height 0.5s;
+}
+.team .team-card .team-shadow p {
+  display: none;
+  color: #fff;
+  display: none;
+}
+.team .team-card .card-image:hover .team-shadow {
+  height: 100%;
+}
+.team .team-card .card-image:hover .team-shadow p {
+  display: block;
+}
+.team .team-card .card-text {
+  position: absolute;
+  width: 150px;
+  height: 20%;
+  bottom: 0;
+  background-color: rgb(7, 0, 50);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 15px 0;
+}
+.team .team-card .card-text h4 {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.contact {
+  position: relative;
+  color: #fff;
+}
+.contact h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact a {
+  color: #fff;
+  font-size: 24px;
+  padding: 0 30px;
+}
+.contact a:hover {
+  color: dodgerblue;
+}
+
+.footer {
+  bottom: 0;
+  background-color: rgb(7, 0, 50);
+}
+.footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-picture .header-content .hero-text {
+    font-size: 16px;
+  }
+  .hero-picture .header-content .hero-text i {
+    font-size: 120px;
+  }
+  .hero-picture .header-content .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-picture {
+    background-image: url(../img/wolf-g61cc62266_1920.jpg);
+  }
+  .navbar-body a {
+    font-size: 18px;
+  }
+  .products .products-group .product-card {
+    height: 220px;
+  }
+  .products .products-group .product-card h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-picture .header-content .hero-text {
+    font-size: 18px;
+  }
+  .hero-picture .header-content .hero-text i {
+    font-size: 140px;
+  }
+  .hero-picture .header-content .hero-text h1 {
+    font-size: 50px;
+  }
+  .products .products-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .products .products-group .product-card {
+    height: 300px;
+    width: 50%;
+  }
+  .products .products-group .product-card h3 {
+    font-size: 22px;
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
