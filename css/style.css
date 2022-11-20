@@ -7,7 +7,7 @@
 
 body {
   position: relative;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-color: black;
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
@@ -36,21 +36,21 @@ h2 {
   transition: color 0.3s;
 }
 .navbar-body a:hover {
-  color: dodgerblue;
+  color: #44b8e2;
 }
 .navbar-body .navbar-nav .nav-link.active {
-  color: dodgerblue;
+  color: #44b8e2;
 }
 .navbar-body .navbar-nav .nav-link {
   padding-left: 15px;
   text-transform: uppercase;
 }
 .navbar-body .navbar-brand .logo-mark {
-  color: dodgerblue;
+  color: #44b8e2;
   text-transform: uppercase;
 }
 .navbar-body .navbar-brand:hover {
-  color: dodgerblue;
+  color: #44b8e2;
 }
 .navbar-body .navbar-toggler .burger-icon {
   padding: 5px;
@@ -58,7 +58,7 @@ h2 {
   color: #fff;
 }
 .navbar-body .navbar-toggler .burger-hover {
-  color: dodgerblue;
+  color: #44b8e2;
 }
 
 .hero-picture {
@@ -96,7 +96,7 @@ h2 {
 }
 .hero-picture .header-content .hero-text i {
   font-size: 100px;
-  color: dodgerblue;
+  color: #44b8e2;
 }
 .hero-picture .header-content .hero-text h1 {
   font-weight: bold;
@@ -105,7 +105,7 @@ h2 {
 }
 .hero-picture .header-content .hero-text .header-logo-mark {
   text-transform: uppercase;
-  color: dodgerblue;
+  color: #44b8e2;
 }
 .hero-picture .arrow {
   position: absolute;
@@ -303,12 +303,12 @@ h2 {
   padding: 0 30px;
 }
 .contact a:hover {
-  color: dodgerblue;
+  color: #44b8e2;
 }
 
 .footer {
   bottom: 0;
-  background-color: rgb(7, 0, 50);
+  background-color: rgb(49, 49, 49);
 }
 .footer p {
   margin-bottom: 0;
