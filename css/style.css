@@ -264,7 +264,6 @@ h2 {
 .team .team-card .team-shadow p {
   display: none;
   color: #fff;
-  display: none;
 }
 .team .team-card .card-image:hover .team-shadow {
   height: 100%;
